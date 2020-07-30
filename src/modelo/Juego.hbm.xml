@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 29-may-2019 12:52:29 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Juego" table="juego" schema="public" optimistic-lock="version">
+        <id name="idjuego" type="int">
+            <column name="idjuego" />
+            <generator class="assigned" />
+        </id>
+        <property name="titulo" type="string">
+            <column name="titulo" length="20" />
+        </property>
+        <property name="consola" type="string">
+            <column name="consola" length="20" />
+        </property>
+        <property name="genero" type="string">
+            <column name="genero" length="20" />
+        </property>
+        <property name="njugadores" type="string">
+            <column name="njugadores" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 29-may-2019 12:52:29 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Plataforma" table="plataforma" schema="public" optimistic-lock="version">
+        <id name="idconsola" type="int">
+            <column name="idconsola" />
+            <generator class="assigned" />
+        </id>
+        <property name="consola" type="string">
+            <column name="consola" length="20" />
+        </property>
+        <property name="bytes" type="java.lang.Integer">
+            <column name="bytes" />
+        </property>
+        <property name="lanzamiento" type="java.lang.Integer">
+            <column name="lanzamiento" />
+        </property>
+        <property name="rutaimagen" type="string">
+            <column name="rutaimagen" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
